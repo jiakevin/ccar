@@ -18,6 +18,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public Collection<String> sayHello() {
-        return IntStream.range(0, 10).mapToObj(i -> "hello number " + i).collect(Collectors.toList());
+        return IntStream.range(0, 15).mapToObj(i -> "hello number " + i).collect(Collectors.toList());
     }
 }
